@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('starry-sky-2051448_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #lideres {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 300px;
+    text-align: center;
+    
+  }
+  
+  .stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .curtain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('sweden-6834164_1920.jpg');
+    transition: transform 2s ease;
+    z-index: 1;
+  }
+  
+  .curtain.left {
+    left: 0;
+    transform: translateX(0);
+    text-align: justify;
+  }
+  
+  .curtain.right {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  button {
+    position: absolute;
+    z-index: 2;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+  }
+  
+  button.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .open .curtain.left {
+    transform: translateX(-100%);
+  }
+  
+  .open .curtain.right {
+    transform: translateX(100%);
+  }
+  
