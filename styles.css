@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('starry-sky-2051448_640.jpg');
+    background-image: url('./starry-sky-2051448_640.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -31,7 +31,7 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
-    background-image: url('sweden-6834164_1920.jpg');
+    background-image: url('./sweden-6834164_1920.jpg');
     transition: transform 2s ease;
     z-index: 1;
   }
