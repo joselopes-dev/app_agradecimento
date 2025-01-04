@@ -32,6 +32,8 @@ body {
     bottom: 0;
     width: 100%;
     background-image: url('./sweden-6834164_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: transform 2s ease;
     z-index: 1;
   }
@@ -71,5 +73,11 @@ body {
   
   .open .curtain.right {
     transform: translateX(100%);
+  }
+
+@media (min-width: 780px) {
+    body {
+        display: none;
+    }
   }
   
